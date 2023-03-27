@@ -1,6 +1,16 @@
-dict1 = {}
+def sum_rec (num, num1):
+    if num == 0:
+        print(num1)
+        return num1
+        
+    else:    
+        sum_rec(num-1,num1+1)
+        
 
-dict1["d"] = 1
+num = int(input('Введите число: '))
+num1 = int(input('Введите число: '))
 
-dict1["d"] = 2
-print(dict1)
+sum_rec(num,num1)
+
+
+print(num1)
